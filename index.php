@@ -10,18 +10,6 @@ if (!isset($_SESSION['tables_created'])) {
 }
 
 
-$request = $_SERVER['REQUEST_URI'];
-$viewDir = '/views/';
-
-switch ($request) {
-    case '':
-    case '/':
-        require __DIR__ . $viewDir . 'home.html';
-        break;
-
-    default:
-        require __DIR__ . '/index.php';
-}
 ?>
 
 <!DOCTYPE html>
